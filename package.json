@@ -1,5 +1,5 @@
 {
-  "name": "initial-jekyll",
+  "name": "buyhardwarewallet",
   "version": "1.0.0",
   "description": "Initial Repo for any New Jekyll Project with Browser-Sync",
   "main": "index.js",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/faizanvahevaria/initial-jekyll.git"
+    "url": "git+https://github.com/buyhardwarewallet.github.io.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/faizanvahevaria/initial-jekyll/issues"
+    "url": "https://github.com/buyhardwarewallet/buyhardwarewallet.github.io/issues"
   },
-  "homepage": "https://github.com/faizanvahevaria/initial-jekyll#readme",
+  "homepage": "https://github.com/buyhardwarewallet.github.io#readme",
   "devDependencies": {
     "browser-sync": "^2.18.5",
     "gulp": "^3.9.1",

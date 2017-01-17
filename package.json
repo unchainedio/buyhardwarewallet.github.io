@@ -1,0 +1,25 @@
+{
+  "name": "initial-jekyll",
+  "version": "1.0.0",
+  "description": "Initial Repo for any New Jekyll Project with Browser-Sync",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/faizanvahevaria/initial-jekyll.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/faizanvahevaria/initial-jekyll/issues"
+  },
+  "homepage": "https://github.com/faizanvahevaria/initial-jekyll#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.5",
+    "gulp": "^3.9.1",
+    "gulp-shell": "^0.5.2",
+    "lodash": "^4.17.4"
+  }
+}

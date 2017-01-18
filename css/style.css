@@ -3961,3 +3961,106 @@ p > video {
 		padding: 0;
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
+/*  Table Style  */
+#ptsBlock_240035 {
+		width: 100%;
+}
+#ptsBlock_240035 .ptsCol {
+    	  		width: 25%;
+
+  padding: 0px 2.5px;
+}
+#ptsBlock_240035 .ptsCol .ptsTableElementContent {
+  box-sizing: border-box;
+  	border: solid 1px #f5f5f5;
+    border-bottom: solid 2px #f0f0f0;
+    border-top-width: 2px;
+  	background-color: #fff;
+
+}
+#ptsBlock_240035 .ptsColHeader {
+	padding: 15px;
+  	font-size: 24px;
+  	font-weight: bold;
+  	padding-top: 21px;
+}
+#ptsBlock_240035 .ptsCol .ptsColDesc {
+  	font-size: 24px;
+  	padding-top: 6px;
+}
+#ptsBlock_240035 .ptsCol .ptsRows {
+    padding-top: 30px;
+  	padding-bottom: 16px;
+}
+#ptsBlock_240035 .ptsCol .ptsCell {
+	padding: 7px 12px;
+}
+#ptsBlock_240035 .ptsCol .ptsColFooter {
+	padding: 20px;
+  	border: 1px solid #dcdcdc;
+  	background-image: linear-gradient(to bottom, #ffffff, #ebebeb);
+}
+#ptsBlock_240035 .ptsCol .ptsActBtn {
+  	border-radius: 3px;
+  	cursor: pointer;
+  	margin-bottom: 17px;
+}
+#ptsBlock_240035 .ptsCol .ptsActBt:hover {
+	background-color: #ffffff;
+}
+#ptsBlock_240035 .ptsCol .ptsActBtn .ptsEditArea {
+  	width: 100%;
+  	padding: 6px 16px;
+  	text-decoration: none !important;
+  	border: none !important;
+}
+#ptsBlock_240035 .ptsTableDescCol {
+  }
+
+
+#ptsBlock_240035 .ptsCol.ptsTableDescCol .ptsColFooter {
+	visibility: hidden;
+}
+#ptsBlock_240035 p {
+	margin: 0;
+}
+/*Animations*/
+#ptsBlock_240035 .ptsCol .ptsTableElementContent,
+#ptsBlock_240035 .ptsCol .ptsTableElementContent span {
+	transition: all 0.3s ease;
+  	-webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+}
+#ptsBlock_240035 .ptsCol.hover .ptsTableElementContent {
+	z-index: 101;
+  	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  	-webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+	margin-top: -20px;
+}
+#ptsBlock_240035 .ptsCol .ptsActBtn a {
+	font-size: 14px;
+}
+/*Colors set*/
+#ptsBlock_240035 .ptsCol .ptsColHeader {
+  	color: #27AE60;
+}
+#ptsBlock_240035 .ptsCol .ptsColDesc {
+  	color: #505055;
+}
+#ptsBlock_240035 .ptsCol .ptsRows {
+  	color: #505050;
+}

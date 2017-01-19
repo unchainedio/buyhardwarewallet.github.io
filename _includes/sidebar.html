@@ -1,9 +1,11 @@
+---
+---
 <aside id="seconday" class="sidebar widget-area">
   <section class="widget">
     <h2 class="widget-title">Follow On Social Media</h2>
-    <a href=""><i class="fa fa-facebook-square fa-3x" aria-hidden="true"></i></a>
-    <a href=""><i class="fa fa-twitter fa-3x" aria-hidden="true"></i></a>
-    <a href=""><i class="fa fa-pinterest fa-3x" aria-hidden="true"></i></a>
+    <a href="https://www.facebook.com/{{ site.facebook_username }}"><i class="fa fa-facebook-square fa-3x" aria-hidden="true"></i></a>
+    <a href="https://twitter.com/{{ site.twitter_username }}"><i class="fa fa-twitter fa-3x" aria-hidden="true"></i></a>
+    <a href="https://in.pinterest.com/{{ site.pinterest_username }}/"><i class="fa fa-pinterest fa-3x" aria-hidden="true"></i></a>
   </section>
   <section class="widget">
     <h2 class="widget-title">Ticker</h2>
@@ -26,17 +28,14 @@
     </table>
   </section>
   <section id="nav_menu-2" class="widget widget_nav_menu">
+    <h2 class="widget-title">Recent Posts</h2>
     <div class="menu-hardware-wallet-container">
       <ul id="menu-hardware-wallet-1" class="menu">
-        <li id="" class="menu-item"><a href="/">Hardware Wallet</a></li>
-        <li id="" class="menu-item"><a href="/bitcoin/">Bitcoin</a></li>
-        <li id="" class="menu-item"><a href="/security/">Security</a></li>
-        <li id="" class="menu-item"><a href="/ethereum-hardware-wallet/">Ether wallet</a></li>
-        <li id="" class="menu-item"><a href="/trezor-wallet/">Trezor Wallet</a></li>
-        <li id="" class="menu-item"><a href="/ledger-wallet/">Ledger Wallet</a></li>
-        <li id="" class="menu-item"><a href="/keepkey-wallet/">Keepkey Wallet</a></li>
-        <li id="" class="menu-item"><a href="/paper-wallet/">Paper wallet</a></li>
-        <li id="" class="menu-item"><a href="/vocabulary/">Vocabulary</a></li>
+        {% for nav-item in site.posts limit:5 %}
+          {% if nav-item.location == 'sidebar' %}
+            <li id="" class="menu-item"><a href="{{nav-item.url}}">{{nav-item.title}}</a></li>
+          {% endif %}
+        {% endfor %}
       </ul>
     </div>
   </section>

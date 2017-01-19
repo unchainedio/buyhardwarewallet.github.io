@@ -1,15 +1,29 @@
 ---
 layout: default
 ---
-<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
-  <header class="post-header">
-    <h1 class="post-title" itemprop="name headline">{{ page.title | escape }}</h1>
-    <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
-  </header>
+<div id="primary" class="content-area">
+  <main id="main" class="site-main" >
+    <article>
+      <h1>
+        {% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}
+      </h1>
+      {{ content }}
+    </article>
+  </main>
+  <!-- .site-main -->
+  <aside id="content-bottom-widgets" class="content-bottom-widgets" role="complementary">
+		<div class="widget-area">
+			<section id="text-4" class="widget widget_text"><h2 class="widget-title">Disclaimer</h2>
+        <div class="textwidget">This website is created to inform visitors about hardware wallets and Bitcoin related products and refers them to the retailers. These retailers are responsible for the quality and delivery of the product and not this website.
+        Cryptocurrencies can be risky. Everyone is responsible for his / her own actions. We are not responsible for any form of damage, lost or theft when you get involved in it.
+        </div>
+		  </section>
+    </div><!-- .widget-area -->
+	</aside>
+  <!-- .content-bottom-widgets -->
+</div>
 
-  <div class="post-content" itemprop="articleBody">
-    {{ content }}
-  </div>
+<!-- .content-area  -->
 
-</article>
+{% include sidebar.html %}

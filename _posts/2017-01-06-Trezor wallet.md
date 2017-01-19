@@ -1,6 +1,7 @@
 ---
-layout: page
+layout: post
 title: Trezor wallet
+location: sidebar
 permalink: /trezor-wallet/
 ---
 # Hardware wallet Trezor

@@ -11,11 +11,12 @@
   		<nav id="site-navigation" class="main-navigation" role="navigation" aria-label="Primary Menu">
   			<div class="menu-hardware-wallet-container">
   				<ul id="menu-hardware-wallet" class="primary-menu">
-            <li id="" class="menu-item"><a href="/">Hardware Wallet</a></li>
-  					<li id="" class="menu-item"><a href="/ethereum-hardware-wallet/">Ether wallet</a></li>
-  					<li id="" class="menu-item"><a href="/trezor-wallet/">Trezor Wallet</a></li>
-  					<li id="" class="menu-item"><a href="/ledger-wallet/">Ledger Wallet</a></li>
-  					<li id="" class="menu-item"><a href="/keepkey-wallet/">Keepkey Wallet</a></li>
+            {% for nav-item in site.posts %}
+              {% if nav-item.location == 'header' %}
+                <li id="" class="menu-item"><a href="{{nav-item.url}}">{{nav-item.title}}</a></li>
+              {% endif %}
+            {% endfor %}
+            <li id="" class="menu-item"><a href="/blog/">Blog</a></li>
   				</ul>
   			</div>
   		</nav><!-- .main-navigation -->

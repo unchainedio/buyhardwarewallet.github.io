@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Introduction
-permalink: /introduction
+permalink: /introduction/
 ---
 
 *Hardware wallets* are not just another unnecessary fancy gadget. They are irreplacable for people who need to keep their cryptocurrencies safe.
